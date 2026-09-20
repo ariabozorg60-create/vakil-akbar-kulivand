@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-black: #0A0B0D;
+  --color-brand-dark: #121417;
+  --color-brand-surface: #1A1D21;
+  --color-brand-card: #16191D;
+  --color-brand-border: #2A2E35;
+  --color-brand-border-hover: #3F454F;
+  --color-brand-borderHover: #3F454F;
+  --color-brand-olive: #243328;
+  --color-brand-olive-muted: #1B261E;
+  --color-brand-oliveMuted: #1B261E;
+  --color-brand-olive-light: #3D5444;
+  --color-brand-oliveLight: #3D5444;
+  --color-brand-gold: #E5C07B;
+  --color-brand-gold-hover: #F3CF8A;
+  --color-brand-goldHover: #F3CF8A;
+  --color-brand-text-muted: #9CA3AF;
+  --color-brand-textMuted: #9CA3AF;
+  --color-brand-text-subtle: #6B7280;
+  --color-brand-textSubtle: #6B7280;
+
+  --font-sans: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Cinzel', serif;
+}
+
+body {
+  font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+  background-color: #0A0B0D;
+  color: #F3F4F6;
+  scroll-behavior: smooth;
+}
+
+/* Subtle luxury backdrop accents */
+.glow-olive {
+  background: radial-gradient(circle at 50% 30%, rgba(36, 51, 40, 0.45) 0%, rgba(10, 11, 13, 0) 70%);
+}
+.glow-corner {
+  background: radial-gradient(circle at 100% 0%, rgba(61, 84, 68, 0.18) 0%, rgba(10, 11, 13, 0) 50%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0B0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #243328;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3D5444;
+}
